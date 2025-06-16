@@ -18,10 +18,15 @@ A criação do site é uma iniciativa para fortalecer a presença digital da DiM
 ## Funcionalidades Previstas
 
 ✅ Página inicial com apresentação da empresa;
+
 ✅ Galeria de produtos (frutas, verduras e outros);
+
 ✅ Seção de promoções e destaques da semana;
+
 ✅ Formulário de contato;
+
 ✅ Informações de localização e horário de funcionamento;
+
 ✅ Integração com redes sociais da empresa.
 
 ## Tecnologias Utilizadas

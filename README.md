@@ -2,11 +2,18 @@
 
 # 🍓 Projeto de Site - DiMorangos Hortifruti
 
-## Membros
-* Danielli de Freitas <img src="![image](https://github.com/user-attachments/assets/c478be4a-7fc2-4f0f-aba7-9eccf57bbc94)
-" width="200" height="150">
-* Giovanna Oliveira
-![image](https://github.com/user-attachments/assets/d96e4ef2-13ac-4f0b-9b81-6bea277530a4)
+## Sobre a Empresa
+
+O grupo é formado por 7 estudantes da Escola SENAI A. Jacob Lafer dispostas a cumprir um desafio de um projeto de site *completo*. As integrantes são:
+
+- [@julia-daniluski](https://github.com/julia-daniluski)
+- [@Zanirato](https://github.com/Zanirato)
+- [@bellidin](https://github.com/bellidin)
+- [@giohk](https://github.com/giohk)
+- [@danidani1907](https://github.com/danidani1907)
+- [@RayanneP](https://github.com/RayanneP)
+- [@laisboscolo](https://github.com/laisboscolo)
+
 
 ## Sobre o Projeto
 

@@ -3,8 +3,7 @@
 # 🍓 Projeto de Site - DiMorangos Hortifruti
 
 ## Membros
-* Danielli de Freitas
-![image](https://github.com/user-attachments/assets/da157c4f-4384-4e0e-a07e-1136ed654386)
+* Danielli de Freitas![image](https://github.com/user-attachments/assets/da157c4f-4384-4e0e-a07e-1136ed654386)
 * Giovanna Oliveira
 ![image](https://github.com/user-attachments/assets/d96e4ef2-13ac-4f0b-9b81-6bea277530a4)
 

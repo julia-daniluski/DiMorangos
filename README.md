@@ -2,6 +2,9 @@
 
 # 🍓 Projeto de Site - DiMorangos Hortifruti
 
+![unnamed](https://github.com/user-attachments/assets/75bdba3f-4e22-4448-81a5-a5b05dac3b4e)
+
+
 ## Sobre o Projeto
 
 Este repositório faz parte do desenvolvimento de uma webpage criada por nosso grupo com o objetivo de **ampliar o alcance comercial da empresa DiMorangos**, um hortifruti conhecido por oferecer frutas, verduras e produtos frescos de alta qualidade.

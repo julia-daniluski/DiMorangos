@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), 
+              url("imgs/morangos.jpg"); 
+  background-position: center; 
+  background-size: cover; 
+  height: calc(100vh - 60px); /* supondo que o menu tenha 60px de altura */
+  position: relative; /* IMPORTANTE para posicionamentos absolutos */
+  display: flex;
+  justify-content: center; /* centraliza o texto */
+  align-items: center;
+  color: var(--text-color);
+}
+
+.search-box {
+  position: absolute;
+  top: 20px;         /* distância do topo */
+  right: 20px;       /* distância da direita */
+  background: #353b48;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  color: #ff0000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #353b48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: white;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.central-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.central-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.central-text p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.menu {
+  width: 100%;
+  background-color: #c62857;
+  padding: 0;
+  z-index: 10;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ffccdd; /* cor mais clara ao passar o mouse */
+}
+.texto1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background-color: #c7e3d4; /* Fundo verde claro */
+}
+
+.imagem {
+  width: 450px;        /* Um pouco maior pra parecer como na imagem */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* leve sombra */
+}
+
+.texto1 p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #1d1d1d;
+  text-align: justify;
+  font-family: 'Arial', sans-serif;
+}
+
+.destaque {
+  color: #c62857;
+  font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-image: url('imgs/fundo-frutas.jpg'); /* Coloque a imagem de fundo certa */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+}
+
+.item.ativo {
+    display: block;
+    opacity: 1;
+}
+
+.item img {
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.item .title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.botao-saiba {
+    background-color: #d62d2d;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-saiba:hover {
+    background-color: #a12020;
+}
+
+.seta button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    color: #d62d2d;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.seta button:hover {
+    background-color: #f0f0f0;
+}
+
+#anterior {
+    left: 10px;
+}
+
+#proximo {
+    right: 10px;
+}

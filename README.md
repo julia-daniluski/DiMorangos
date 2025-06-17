@@ -57,3 +57,7 @@ A **DiMorangos Hortifruti** é uma empresa local que preza pela qualidade e pelo
 **Logomarca:**
 
 ![unnamed](https://github.com/user-attachments/assets/75bdba3f-4e22-4448-81a5-a5b05dac3b4e)
+
+**Projeto Figma**
+
+https://www.figma.com/design/SsdD7zSc2gXbZVpF5FAs93/Untitled?node-id=11-3&t=uP48VGSKdxVmYAIX-1

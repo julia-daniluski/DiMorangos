@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -212,31 +215,114 @@ main {
     background-color: #a12020;
 }
 
-.seta button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    color: #d62d2d;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 2;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+hr{
+  padding: 40px 0 100px;
+  background-color: #c7e3d4;
+}
+/* Carrossel 1 */
+
+.section-title{
+  color: aliceblue;
+}
+.frutas-section-gela{
+  padding: 50px 0 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), 
+              url("imgs/congelaaaaaaaaaaaa.jpg"); 
+  background-position: center; 
+  background-size: cover; 
 }
 
-.seta button:hover {
-    background-color: #f0f0f0;
+.frutas-section-gela .slider-wrapper {
+  overflow: hidden;
+  margin: 0 60px 50px;
 }
 
-#anterior {
-    left: 10px;
+.frutas-section-gela .frutas {
+  display: flex;
+  padding: 35px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-#proximo {
-    right: 10px;
+.frutas-section-gela .frutas .frutas-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.frutas-section-gela .frutas .name{
+  margin-bottom: 16px;
+  color: aliceblue;
+}
+
+.frutas-section-gela .swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  background: #ff0000;
+}
+
+.frutas-section-gela .swiper-slide-button{
+  margin-top: -50px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.frutas-section-gela .swiper-slide-button:hover{
+  color:#a12020 ;
+}
+
+/* Carrossel */
+
+.section-title{
+  color: aliceblue;
+}
+.frutas-section-fresca{
+  padding: 50px 0 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), 
+              url("imgs/frescarsrs.png"); 
+  background-position: center; 
+  background-size: cover; 
+}
+
+.frutas-section-fresca .slider-wrapper {
+  overflow: hidden;
+  margin: 0 60px 50px;
+}
+
+.frutas-section-fresca .frutas {
+  display: flex;
+  padding: 35px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frutas-section-fresca .frutas .frutas-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.frutas-section-fresca .frutas .name{
+  margin-bottom: 16px;
+  color: aliceblue;
+}
+
+.frutas-section-fresca .swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  background: #ff0000;
+}
+
+.frutas-section-fresca .swiper-slide-button{
+  margin-top: -50px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.frutas-section-fresca .swiper-slide-button:hover{
+  color:#a12020 ;
 }

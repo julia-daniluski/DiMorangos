@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="shortcut icon" href="imgs/logoDiMorangos.png" type="image/x-icon"> 
     <title>DiMorangos</title>
+
 </head>
 <body>
   <header>
@@ -43,36 +45,82 @@
     A <strong class="destaque">DiMorangos</strong> é uma empresa dedicada ao cultivo e à distribuição de frutas frescas, com um foco especial em morangos. Com produção própria e compromisso com a qualidade, a empresa oferece frutas selecionadas, saborosas e cultivadas com cuidado desde o plantio até a entrega. Embora os morangos sejam o grande destaque, a DiMorangos também trabalha com uma variedade de outras frutas, atendendo feiras, mercados, comércios locais e consumidores finais. Seu diferencial está na frescura dos produtos, no controle rigoroso de cada etapa do processo e na paixão por levar o melhor do campo à mesa.
   </p>
 </section>
- <main>
-    <section class="item ativo">
+    <!--<section class="item ativo">
         <img src="imgs/maracuja.png" alt="Maracujá">
         <div class="title">Maracujá</div>
         <a href="#" class="botao-saiba">Saiba mais</a>
     </section>
+  -->
+    <section class="frutas-section-fresca">
+      <h2 class="section-title">Frutas Frescas</h2>
+      <div class="section-content swiper">
+        <div class="slider-wrapper">
+          <ul class="frutas-list swiper-wrapper">
+            <li class="frutas swiper-slide">
+              <img src="imgs/maracuja.png" alt="foto" class="frutas-image">
+              <h3 class="name">Maracuja</h3>
+              <a href="#" class="botao-saiba">Saiba mais</a>
+            </li>
+             <li class="frutas swiper-slide">
+              <img src="imgs/morango.png" alt="foto" class="frutas-image">
+              <h3 class="name">Morango</h3>
+              <a href="#" class="botao-saiba">Saiba mais</a>
+            </li>
+             <li class="frutas swiper-slide">
+              <img src="imgs/maca.png" alt="foto" class="frutas-image">
+              <h3 class="name">Maça</h3>
+              <a href="" class="botao-saiba">Saiba mais</a>
+            </li>
+             <li class="frutas swiper-slide">
+              <img src="imgs/laranja.png" alt="foto" class="frutas-image">
+              <h3 class="name">Laranja</h3>
+              <a href="#" class="botao-saiba">Saiba mais</a>
+            </li>
+          </ul>
 
-    <section class="item">
-        <img src="imgs/morango.png" alt="Morango">
-        <div class="title">Morango</div>
-        <a href="#" class="botao-saiba">Saiba mais</a>
+          <div class="swiper-pagination "></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+
+        </div>
+      </div>
     </section>
+    <hr>
+    <section class="frutas-section-gela">
+      <h2 class="section-title">Frutas Congeladas</h2>
+      <div class="section-content swiper">
+        <div class="slider-wrapper">
+          <ul class="frutas-list swiper-wrapper">
+            <li class="frutas swiper-slide">
+              <img src="imgs/maracuja.png" alt="foto" class="frutas-image">
+              <h3 class="name">Maracuja</h3>
+              <a href="#" class="botao-saiba">Saiba mais</a>
+            </li>
+             <li class="frutas swiper-slide">
+              <img src="imgs/morango.png" alt="foto" class="frutas-image">
+              <h3 class="name">Morango</h3>
+              <a href="#" class="botao-saiba">Saiba mais</a>
+            </li>
+             <li class="frutas swiper-slide">
+              <img src="imgs/maca.png" alt="foto" class="frutas-image">
+              <h3 class="name">Maça</h3>
+              <a href="" class="botao-saiba">Saiba mais</a>
+            </li>
+             <li class="frutas swiper-slide">
+              <img src="imgs/laranja.png" alt="foto" class="frutas-image">
+              <h3 class="name">Laranja</h3>
+              <a href="#" class="botao-saiba">Saiba mais</a>
+            </li>
+          </ul>
 
-    <section class="item">
-        <img src="imgs/laranja.png" alt="Laranja">
-        <div class="title">Laranja</div>
-        <a href="#" class="botao-saiba">Saiba mais</a>
+          <div class="swiper-pagination "></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+
+        </div>
+      </div>
     </section>
-
-    <section class="item">
-        <img src="imgs/maca.png" alt="Maçã">
-        <div class="title">Maçã</div>
-        <a href="#" class="botao-saiba">Saiba mais</a>
-    </section>
-
-    <div class="seta">
-        <button id="anterior">&lt;</button>
-        <button id="proximo">&gt;</button>
-    </div>
-</main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
 </body>

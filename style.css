@@ -350,7 +350,7 @@ hr{
   color: #d62d2d;
 }
 
-skills {
+#skills {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,7 +435,7 @@ body{
 
 #name{
   font-family:Merriweather  ;
-  margin-left: 550px;
+  
   font-size: 100px;
   margin-bottom:100px ;
 }

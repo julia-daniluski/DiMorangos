@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>adicionar fruta</title>
+    <link rel="shortcut icon" href="DiMorangos-main/imgs/logoDiMorangos.png" type="image/x-icon">
+    <link rel="stylesheet" href= "add.css">
 </head>
 <body>
     <form action="salvar_fruta.php" method="POST" enctype="multipart/form-data">
@@ -16,7 +18,7 @@
   </select><br><br>
     <textarea name="descricao" placeholder="Descrição da fruta" required></textarea>
   <br>
-  <button type="submit">Adicionar Fruta</button>
+<a href="index.php" class="btn-voltar">Voltar para a página inicial</a>
 </form>
 
 </body>

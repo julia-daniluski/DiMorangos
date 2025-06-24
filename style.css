@@ -301,7 +301,7 @@ hr{
 .frutas-section-fresca{
   padding: 50px 0 100px;
   background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), 
-           url(imgs/fundofrutas.png);
+           url(imgs/fundo.png);
   background-position: center; 
   background-size: cover; 
 }
@@ -573,4 +573,110 @@ form textarea {
 
 .footer-social a:hover {
   color: #f04c64;
+}
+/* Estilos para os modais de frutas */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 1.5rem;
+    background-color: #f86c6c;
+}
+
+.modal-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+/* Estilo base para modais de frutas frescas */
+.modal-body[data-categoria="fresca"] {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(198, 40, 87, 0.05) 100%);
+}
+
+/* Estilo base para modais de frutas congeladas */
+.modal-body[data-categoria="congelada"] {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(0, 114, 188, 0.05) 100%);
+}
+
+/* Imagem da fruta no modal */
+.modal-body img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do texto da descrição */
+.modal-body p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+/* Botão de fechar */
+.btn-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Cores específicas por categoria */
+.modal-fresca .modal-header {
+    background-color: #f8d7da;
+    color: #c62857;
+}
+
+.modal-congelada .modal-header {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Adiciona ícone antes do título baseado na categoria */
+.modal-fresca .modal-title::before {
+    content: "🍓";
+    margin-right: 10px;
+}
+
+.modal-congelada .modal-title::before {
+    content: "❄️";
+    margin-right: 10px;
+}
+
+/* Efeito de hover para o botão de fechar */
+.btn-close:hover {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 1rem auto;
+    }
+    
+    .modal-title {
+        font-size: 1.5rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
 }

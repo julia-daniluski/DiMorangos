@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "Maracujá",
+    "imagem": "maracuja.png",
+    "categoria": "fresca"
+  },
+  {
+    "nome": "Morango",
+    "imagem": "morango.png",
+    "categoria": "fresca"
+  },
+  {
+    "nome": "Amoras",
+    "imagem": "conge3.png",
+    "categoria": "congelada"
+  },
+  {
+    "nome": "Maçã",
+    "imagem": "maca.png",
+    "categoria": "fresca"
+  },
+  {
+    "nome": "Laranja",
+    "imagem": "laranja.png",
+    "categoria": "fresca"
+  },
+  {
+    "nome": "Morangos",
+    "imagem": "conge4.png",
+    "categoria": "congelada"
+  },
+  {
+    "nome": "Uvas",
+    "imagem": "Design sem nome (1).png",
+    "categoria": "congelada"
+  },
+  {
+    "nome": "Mirtilos",
+    "imagem": "Design sem nome (2).png",
+    "categoria": "congelada"
+  }
+]

@@ -160,7 +160,8 @@ body {
 }
 
 main {
-    background-image: url('imgs/fundo-frutas.jpg'); /* Coloque a imagem de fundo certa */
+  background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), 
+              url(imgs/fundofrutas.png); /* Coloque a imagem de fundo certa */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -246,7 +247,7 @@ hr{
 .frutas-section-gela{
   padding: 50px 0 100px;
   background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), 
-              url(imgs/cong.png);
+              url(imgs/fundofrutascongeladas.png);
   background-position: center; 
   background-size: cover; 
 }

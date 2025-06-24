@@ -73,6 +73,7 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
   </section>
 
   <hr>
+  
 
   <section class="frutas-section-gela" id="frutas-congeladas">
     <h2 class="titulo"><span class="destaque">FRUTAS</span><br><span class="secundario">congeladas</span></h2>

@@ -14,6 +14,8 @@
     <option value="fresca">Fresca</option>
     <option value="congelada">Congelada</option>
   </select><br><br>
+    <textarea name="descricao" placeholder="Descrição da fruta" required></textarea>
+  <br>
   <button type="submit">Adicionar Fruta</button>
 </form>
 

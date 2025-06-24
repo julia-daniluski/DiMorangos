@@ -2,41 +2,49 @@
   {
     "nome": "Maracujá",
     "imagem": "maracuja.png",
-    "categoria": "fresca"
+    "categoria": "fresca",
+    "descricao": "O maracujá da DiMorangos é colhido com todo cuidado para garantir seu sabor intenso e propriedades relaxantes. Ideal para sucos, sobremesas ou consumo in natura."
   },
   {
     "nome": "Morango",
     "imagem": "morango.png",
-    "categoria": "fresca"
+    "categoria": "fresca",
+    "descricao": "Os morangos frescos da DiMorangos são doces, suculentos e cultivados com todo carinho. Perfeitos para consumo direto, sobremesas ou sucos refrescantes."
   },
   {
     "nome": "Amoras",
     "imagem": "conge3.png",
-    "categoria": "congelada"
+    "categoria": "congelada",
+    "descricao": "As amoras congeladas da DiMorangos mantêm sabor e nutrientes. São ideais para sucos, geleias, recheios e sobremesas geladas."
   },
   {
     "nome": "Maçã",
     "imagem": "maca.png",
-    "categoria": "fresca"
+    "categoria": "fresca",
+    "descricao": "A maçã fresca da DiMorangos é crocante, saborosa e rica em nutrientes. Uma excelente opção para lanches saudáveis e receitas caseiras."
   },
   {
     "nome": "Laranja",
     "imagem": "laranja.png",
-    "categoria": "fresca"
+    "categoria": "fresca",
+    "descricao": "As laranjas da DiMorangos são colhidas no ponto certo para garantir suco doce e refrescante, além de serem fontes naturais de vitamina C."
   },
   {
     "nome": "Morangos",
     "imagem": "conge4.png",
-    "categoria": "congelada"
+    "categoria": "congelada",
+    "descricao": "Os morangos congelados preservam todo o sabor da fruta fresca. Uma ótima opção para smoothies, bolos ou recheios."
   },
   {
     "nome": "Uvas",
     "imagem": "Design sem nome (1).png",
-    "categoria": "congelada"
+    "categoria": "congelada",
+    "descricao": "As uvas congeladas da DiMorangos são práticas e deliciosas. Podem ser consumidas como snack gelado ou usadas em receitas e drinks."
   },
   {
     "nome": "Mirtilos",
     "imagem": "Design sem nome (2).png",
-    "categoria": "congelada"
+    "categoria": "congelada",
+    "descricao": "Os mirtilos congelados são ricos em antioxidantes e perfeitos para vitaminas, iogurtes e panquecas. Sabor e saúde em uma única fruta!"
   }
 ]

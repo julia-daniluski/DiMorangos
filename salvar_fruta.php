@@ -14,10 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $frutas = file_exists($arquivo) ? json_decode(file_get_contents($arquivo), true) : [];
 
         // Adicionar nova fruta
-        $frutas[] = [
-            'nome' => $nome,
-            'imagem' => $imagemNome,
-            'categoria' => $categoria
+
+        $frutas = [
+        'nome' => $nome,
+        'imagem' => $destino,
+        'categoria' => $categoria,
+        'descricao' => $_POST['descricao'] ?? 'Sem descrição.'
         ];
 
         // Salvar frutas atualizadas

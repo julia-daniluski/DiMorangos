@@ -1,6 +1,5 @@
 <?php
 // index.php no topo
-
 $arquivo = 'frutas.json';
 $frutas = file_exists($arquivo) ? json_decode(file_get_contents($arquivo), true) : [];
 
@@ -14,11 +13,10 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
   <meta charset="UTF-8">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adicionei o CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" /> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <!-- Bootstrap JS Bundle (necessário para modal funcionar) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
   <link rel="shortcut icon" href="imgs/logoDiMorangos.png" type="image/x-icon"> 
   <title>DiMorangos</title>
 </head>
@@ -59,11 +57,11 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
     <div class="section-content swiper">
       <div class="slider-wrapper">
         <ul class="frutas-list swiper-wrapper">
-          <?php foreach ($frutasFrescas as $fruta): ?>
+          <?php foreach ($frutasFrescas as $i => $fruta): ?>
             <li class="frutas swiper-slide">
               <img src="imgs/<?= htmlspecialchars($fruta['imagem']) ?>" alt="<?= htmlspecialchars($fruta['nome']) ?>" class="frutas-image" />
               <h3 class="name"><?= htmlspecialchars($fruta['nome']) ?></h3>
-              <a href="#" class="botao-saiba">Saiba mais</a>
+              <button class="botao-saiba btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFrutaFresca<?= $i ?>">Saiba mais</button>
             </li>
           <?php endforeach; ?>
         </ul>
@@ -81,11 +79,11 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
     <div class="section-content swiper">
       <div class="slider-wrapper">
         <ul class="frutas-list swiper-wrapper">
-          <?php foreach ($frutasCongeladas as $fruta): ?>
+          <?php foreach ($frutasCongeladas as $i => $fruta): ?>
             <li class="frutas swiper-slide">
               <img src="imgs/<?= htmlspecialchars($fruta['imagem']) ?>" alt="<?= htmlspecialchars($fruta['nome']) ?>" class="frutas-image" />
               <h3 class="name"><?= htmlspecialchars($fruta['nome']) ?></h3>
-              <a href="#" class="botao-saiba">Saiba mais</a>
+              <button class="botao-saiba btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFrutaCongelada<?= $i ?>">Saiba mais</button>
             </li>
           <?php endforeach; ?>
         </ul>
@@ -96,6 +94,59 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
     </div>
   </section>
 
+  <!-- Modais para Frutas Frescas -->
+  <?php foreach ($frutasFrescas as $i => $fruta): ?>
+  <div class="modal fade" id="modalFrutaFresca<?= $i ?>" tabindex="-1" aria-labelledby="modalFrutaFrescaLabel<?= $i ?>" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFrutaFrescaLabel<?= $i ?>"><?= htmlspecialchars($fruta['nome']) ?></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="imgs/<?= htmlspecialchars($fruta['imagem']) ?>" alt="<?= htmlspecialchars($fruta['nome']) ?>" class="img-fluid mb-2">
+          <p><?= nl2br(htmlspecialchars($fruta['descricao'])) ?></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <?php endforeach; ?>
+
+  <!-- Modais para Frutas Congeladas -->
+  <?php foreach ($frutasCongeladas as $i => $fruta): ?>
+  <div class="modal fade" id="modalFrutaCongelada<?= $i ?>" tabindex="-1" aria-labelledby="modalFrutaCongeladaLabel<?= $i ?>" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFrutaCongeladaLabel<?= $i ?>"><?= htmlspecialchars($fruta['nome']) ?></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="imgs/<?= htmlspecialchars($fruta['imagem']) ?>" alt="<?= htmlspecialchars($fruta['nome']) ?>" class="img-fluid mb-2">
+          <p><?= nl2br(htmlspecialchars($fruta['descricao'])) ?></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <?php endforeach; ?>
+
+  <!-- Modais para Receitas (adicione conforme necessário) -->
+  <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Vitamina de Banana com Maçã</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./imgs/vitaminab.png" alt="Vitamina de Banana" class="img-fluid mb-2">
+          <p>Receita completa da vitamina...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
   <section class="skills" id="skills">
     <div class="line"></div>
     <div class="tech">
@@ -103,47 +154,46 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
       <div class="techs">
         <div class="card">
           <p>Vitamina de Banana com Maçã</p>
-          <img src="./imgs/vitaminab.png" alt="vitamina Banana">
-          <!-- Button trigger modal -->
+          <img src="./imgs/vitaminab.png" alt="Vitamina de Banana">
           <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Veja receita completa
           </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Receita de Vitamina de Banana com Maçã</h1>
-                  
-                </div>
-                <div class="modal-body">
-                  <h2>Ingredientes:</h2>
-                  4 copos de leite
-                  2 bananas frescas do hortifruti DiMorangos
-                  2 maçãs frescas do hortifruti DiMorangos
-                  Açúcar a gosto
-
-                  Modo de preparo:
-                  1- Descasque as bananas e corte em rodelas.
-                  2- Lave bem as maçãs, retire as sementes e corte em pedaços.
-                  3- Coloque as frutas no liquidificador junto com o leite e o açúcar.
-                  4- Bata tudo até obter uma mistura homogênea.
-                  5- Sirva em seguida, bem gelado!
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Understood</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="card"><p>Crepioca de morango</p><img src="./imgs/crepe.png" alt="crepe"><a href="#" class="botao-saiba">Veja receita completa</a></div>
-        <div class="card"><p>Torta de morango</p><img src="./imgs/torta-de-morango.png" alt="torta-de-morango"><a href="#" class="botao-saiba">Veja receita completa</a></div>
-        <div class="card"><p>Maçã do amor</p><img src="imgs/macaamor.png" alt="maçãs do amor"><a href="#" class="botao-saiba">Veja receita completa</a></div>
-        <div class="card"><p>Morango com chocolate</p><img src="./imgs/mochoco.png" alt="morango com chocolate"><a href="#" class="botao-saiba">Veja receita completa</a></div>
-        <div class="card"><p>Suco de laranja com morango</p><img src="./imgs/vitaminalm.png" alt="suco morango com laranja"><a href="#" class="botao-saiba">Veja receita completa</a></div>
+        <div class="card">
+          <p>Crepioca de morango</p>
+          <img src="./imgs/crepe.png" alt="Crepioca de morango">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalCrepioca">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Torta de morango</p>
+          <img src="./imgs/torta-de-morango.png" alt="Torta de morango">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalTorta">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Maçã do amor</p>
+          <img src="imgs/macaamor.png" alt="Maçã do amor">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMacaAmor">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Morango com chocolate</p>
+          <img src="./imgs/mochoco.png" alt="Morango com chocolate">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMorangochoco">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Suco de laranja com morango</p>
+          <img src="./imgs/vitaminalm.png" alt="Suco de laranja com morango">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalSuco">
+            Veja receita completa
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -190,6 +240,8 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
   </div>
 </footer>
 
+
+
   <script>
     document.getElementById("contactForm").addEventListener("submit", function(event) {
       event.preventDefault();
@@ -203,6 +255,7 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
     });
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>

@@ -72,7 +72,7 @@
       <div class="slider-wrapper">
         <ul class="frutas-list swiper-wrapper">
           <li class="frutas swiper-slide"><img src="imgs/conge3.png" alt="foto" class="frutas-image"><h3 class="name">Amoras</h3><a href="#" class="botao-saiba">Saiba mais</a></li>
-          <li class="frutas swiper-slide"><img src="imgs/conge4.png" alt="foto" class="frutas-image"><h3 class="name">Morango</h3><a href="#" class="botao-saiba">Saiba mais</a></li>
+          <li class="frutas swiper-slide"><img src="imgs/conge4.png" alt="foto" class="frutas-image"><h3 class="name">Morangos</h3><a href="#" class="botao-saiba">Saiba mais</a></li>
           <li class="frutas swiper-slide"><img src="imgs/Design sem nome (1).png" alt="foto" class="frutas-image"><h3 class="name">Uvas</h3><a href="#" class="botao-saiba">Saiba mais</a></li>
           <li class="frutas swiper-slide"><img src="imgs/Design sem nome (2).png" alt="foto" class="frutas-image"><h3 class="name">Mirtilos</h3><a href="#" class="botao-saiba">Saiba mais</a></li>
         </ul>
@@ -88,8 +88,34 @@
     <div class="tech">
       <h1 id="name">Receitas</h1>
       <div class="techs">
-        <div class="card"><p>Vitamina de Banana com maçã</p><img src="./imgs/vitaminab.png" alt="vitamina Banana"><a href="#" class="botao-saiba">Veja receita completa</a></div>
-        <div class="card"><p>Crepioca de morango</p><img src="./imgs/crep.png" alt="crepe"><a href="#" class="botao-saiba">Veja receita completa</a></div>
+        <div class="card">
+          <p>Vitamina de Banana com Maçã</p>
+          <img src="./imgs/vitaminab.png" alt="vitamina Banana">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Veja receita completa
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Receita de Vitamina de Banana com Maçã</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card"><p>Crepioca de morango</p><img src="./imgs/crepe.png" alt="crepe"><a href="#" class="botao-saiba">Veja receita completa</a></div>
         <div class="card"><p>Torta de morango</p><img src="./imgs/torta-de-morango.png" alt="torta-de-morango"><a href="#" class="botao-saiba">Veja receita completa</a></div>
         <div class="card"><p>Maçã do amor</p><img src="imgs/macaamor.png" alt="maçãs do amor"><a href="#" class="botao-saiba">Veja receita completa</a></div>
         <div class="card"><p>Morango com chocolate</p><img src="./imgs/mochoco.png" alt="morango com chocolate"><a href="#" class="botao-saiba">Veja receita completa</a></div>

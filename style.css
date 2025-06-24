@@ -405,7 +405,8 @@ hr{
   border-radius: 8px;
   transition: all 0.4s ease;
   color:red;
-  margin-left: 70px;
+  margin: 30px;
+  margin-top: 1px;
 
 }
 
@@ -419,7 +420,7 @@ hr{
 
 .card:hover {
   cursor: pointer;
-  background-color: lightcoral;
+  background-color: rgb(239, 174, 174);
   transform: translateY(-10px);
 }
 
@@ -435,9 +436,8 @@ body{
 
 #name{
   font-family:Merriweather  ;
-  
   font-size: 100px;
-  margin-bottom:100px ;
+  margin-bottom:60px ;
 }
 .contact {
  background-image:  linear-gradient(#c7e3d4, rgba(211, 42, 42, 0.516)), 
@@ -567,6 +567,7 @@ form textarea {
   color: #fff;
   font-size: 22px;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .footer-social a:hover {

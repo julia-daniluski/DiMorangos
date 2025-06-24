@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DiMorangos</title>
+  <link rel="shortcut icon" href="imgs/logoDiMorangos.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imgs/logoDiMorangos.png" alt="Logo Di Morangos">
+    </div>
+    <div class="search-box"> 
+      <input class="search-txt" type="text" placeholder="Faça a sua pesquisa">
+      <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+    </div>
+    <div class="central-text">
+      <h1>COLHIDO COM CARINHO</h1>
+      <p>ENTREGUE COM AMOR</p>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="#sobre">Sobre Nós</a></li>
+      <li><a href="#frutas-frescas">Frutas Frescas</a></li>
+      <li><a href="#frutas-congeladas">Frutas Congeladas</a></li>
+      <li><a href="#skills">Receitas</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="texto1" id="sobre">
+    <img class="imagem" src="imgs/image (4).png" alt="Estufa de morangos">
+    <p>
+      A <strong class="dimor">DiMorangos</strong> é uma empresa dedicada ao cultivo e à distribuição de frutas frescas, com um foco especial em morangos. Com produção própria e compromisso com a qualidade, a empresa oferece frutas selecionadas, saborosas e cultivadas com cuidado desde o plantio até a entrega. Embora os morangos sejam o grande destaque, a DiMorangos também trabalha com uma variedade de outras frutas, atendendo feiras, mercados, comércios locais e consumidores finais. Seu diferencial está na frescura dos produtos, no controle rigoroso de cada etapa do processo e na paixão por levar o melhor do campo à mesa.
+    </p>
+  </section>
+
+  <section class="frutas-section-fresca" id="frutas-frescas">
+    <h2 class="titulo">
+      <span class="destaque">FRUTAS</span><br>
+      <span class="secundario">frescas</span>
+    </h2>
+    <div class="section-content swiper">
+      <div class="slider-wrapper">
+        <ul class="frutas-list swiper-wrapper">
+          <li class="frutas swiper-slide">
+            <img src="imgs/maracuja.png" alt="Maracujá" class="frutas-image">
+            <h3 class="name">Maracujá</h3>
+            <button class="botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMaracuja">Saiba mais</button>
+          </li>
+          <li class="frutas swiper-slide">
+            <img src="imgs/morango.png" alt="Morango" class="frutas-image">
+            <h3 class="name">Morango</h3>
+            <button class="botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMorango">Saiba mais</button>
+          </li>
+          <li class="frutas swiper-slide">
+            <img src="imgs/maca.png" alt="Maçã" class="frutas-image">
+            <h3 class="name">Maçã</h3>
+            <button class="botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMaca">Saiba mais</button>
+          </li>
+          <li class="frutas swiper-slide">
+            <img src="imgs/laranja.png" alt="Laranja" class="frutas-image">
+            <h3 class="name">Laranja</h3>
+            <button class="botao-saiba" data-bs-toggle="modal" data-bs-target="#modalLaranja">Saiba mais</button>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="frutas-section-gela" id="frutas-congeladas">
+    <h2 class="titulo">
+      <span class="destaque">FRUTAS</span><br>
+      <span class="secundario">congeladas</span>
+    </h2>
+    <div class="section-content swiper">
+      <div class="slider-wrapper">
+        <ul class="frutas-list swiper-wrapper">
+          <li class="frutas swiper-slide">
+            <img src="imgs/conge3.png" alt="Amoras" class="frutas-image">
+            <h3 class="name">Amoras</h3>
+            <button class="botao-saiba" data-bs-toggle="modal" data-bs-target="#modalAmoras">Saiba mais</button>
+          </li>
+          <li class="frutas swiper-slide">
+            <img src="imgs/conge4.png" alt="Morangos" class="frutas-image">
+            <h3 class="name">Morangos</h3>
+            <button class="botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMorangoCong">Saiba mais</button>
+          </li>
+          <li class="frutas swiper-slide">
+            <img src="imgs/Design sem nome (1).png" alt="Uvas" class="frutas-image">
+            <h3 class="name">Uvas</h3>
+            <button class="botao-saiba" data-bs-toggle="modal" data-bs-target="#modalUvas">Saiba mais</button>
+          </li>
+          <li class="frutas swiper-slide">
+            <img src="imgs/Design sem nome (2).png" alt="Mirtilos" class="frutas-image">
+            <h3 class="name">Mirtilos</h3>
+            <button class="botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMirtilos">Saiba mais</button>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="line"></div>
+    <div class="tech">
+      <h1 id="name">Receitas</h1>
+      <div class="techs">
+        <div class="card">
+          <p>Vitamina de Banana com Maçã</p>
+          <img src="./imgs/vitaminab.png" alt="Vitamina de Banana">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Crepioca de morango</p>
+          <img src="./imgs/crepe.png" alt="Crepioca de morango">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalCrepioca">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Torta de morango</p>
+          <img src="./imgs/torta-de-morango.png" alt="Torta de morango">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalTorta">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Maçã do amor</p>
+          <img src="imgs/macaamor.png" alt="Maçã do amor">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMacaAmor">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Morango com chocolate</p>
+          <img src="./imgs/mochoco.png" alt="Morango com chocolate">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMorangochoco">
+            Veja receita completa
+          </button>
+        </div>
+        <div class="card">
+          <p>Suco de laranja com morango</p>
+          <img src="./imgs/vitaminalm.png" alt="Suco de laranja com morango">
+          <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalSuco">
+            Veja receita completa
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <div class="main-text">
+        <h2>Entre em <span>contato</span></h2>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" name="name" id="contact-name" placeholder="Digite seu nome" required>
+        <textarea name="message" id="contact-message" cols="35" rows="10" placeholder="Como eu posso te ajudar" required></textarea>
+        <br>
+        <button class="zap" type="submit">Fale Conosco no WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imgs/logoDiMorangos.png" alt="Logo DiMorangos">
+      </div>
+      
+      <div class="footer-info">
+        <p>© 2025 DiMorangos. Todos os direitos reservados.</p>
+        <p>Feito com ❤️ no Brasil.</p>
+      </div>
+      
+      <div class="footer-social">
+        <a href="https://wa.me/5511983747083" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/seuinstagram" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:contato@dimorangos.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modais para frutas frescas -->
+  <div class="modal fade" id="modalMaracuja" tabindex="-1" aria-labelledby="modalMaracujaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalMaracujaLabel">Maracujá</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          O maracujá da DiMorangos é colhido com todo cuidado para garantir seu sabor intenso e propriedades relaxantes. Ideal para sucos, sobremesas ou consumo in natura.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalMorango" tabindex="-1" aria-labelledby="modalMorangoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalMorangoLabel">Morango</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          Os morangos frescos da DiMorangos são doces, suculentos e cultivados com todo carinho. Perfeitos para consumo direto, sobremesas ou sucos refrescantes.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalMaca" tabindex="-1" aria-labelledby="modalMacaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalMacaLabel">Maçã</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          A maçã fresca da DiMorangos é crocante, saborosa e rica em nutrientes. Uma excelente opção para lanches saudáveis e receitas caseiras.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalLaranja" tabindex="-1" aria-labelledby="modalLaranjaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalLaranjaLabel">Laranja</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          As laranjas da DiMorangos são colhidas no ponto certo para garantir suco doce e refrescante, além de serem fontes naturais de vitamina C.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modais para frutas congeladas -->
+  <div class="modal fade" id="modalAmoras" tabindex="-1" aria-labelledby="modalAmorasLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalAmorasLabel">Amoras Congeladas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          As amoras congeladas da DiMorangos mantêm sabor e nutrientes. São ideais para sucos, geleias, recheios e sobremesas geladas.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalMorangoCong" tabindex="-1" aria-labelledby="modalMorangoCongLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalMorangoCongLabel">Morangos Congelados</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          Os morangos congelados preservam todo o sabor da fruta fresca. Uma ótima opção para smoothies, bolos ou recheios.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalUvas" tabindex="-1" aria-labelledby="modalUvasLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalUvasLabel">Uvas Congeladas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          As uvas congeladas da DiMorangos são práticas e deliciosas. Podem ser consumidas como snack gelado ou usadas em receitas e drinks.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalMirtilos" tabindex="-1" aria-labelledby="modalMirtilosLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalMirtilosLabel">Mirtilos Congelados</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          Os mirtilos congelados são ricos em antioxidantes e perfeitos para vitaminas, iogurtes e panquecas. Sabor e saúde em uma única fruta!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modais para receitas -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Receita de Vitamina de Banana com Maçã</h1>
+        </div>
+        <div class="modal-body">
+          <h2>Ingredientes:</h2>
+          <ul>
+            <li>4 copos de leite</li>
+            <li>2 bananas frescas do hortifruti DiMorangos</li>
+            <li>2 maçãs frescas do hortifruti DiMorangos</li>
+            <li>Açúcar a gosto</li>
+          </ul>
+          <h2>Modo de preparo:</h2>
+          <ol>
+            <li>Descasque as bananas e corte em rodelas.</li>
+            <li>Lave bem as maçãs, retire as sementes e corte em pedaços.</li>
+            <li>Coloque as frutas no liquidificador junto com o leite e o açúcar.</li>
+            <li>Bata tudo até obter uma mistura homogênea.</li>
+            <li>Sirva em seguida, bem gelado!</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adicione os outros modais de receitas seguindo o mesmo padrão -->
+  <div class="modal fade" id="modalCrepioca" tabindex="-1" aria-labelledby="modalCrepiocaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalCrepiocaLabel">Crepioca de Morango</h1>
+        </div>
+        <div class="modal-body">
+          <h2>Ingredientes:</h2>
+          <ul>
+            <li>2 colheres de sopa de tapioca</li>
+            <li>1 ovo</li>
+            <li>1 colher de sopa de leite</li>
+            <li>5 morangos DiMorangos picados</li>
+            <li>1 colher de chá de açúcar (opcional)</li>
+          </ul>
+          <h2>Modo de preparo:</h2>
+          <ol>
+            <li>Misture a tapioca, o ovo e o leite até formar uma massa homogênea.</li>
+            <li>Despeje em uma frigideira antiaderente e doure dos dois lados.</li>
+            <li>Recheie com os morangos picados e dobre como uma panqueca.</li>
+            <li>Sirva quente.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!<!-- Modal Torta de Morango -->
+<div class="modal fade" id="modalTorta" tabindex="-1" aria-labelledby="modalTortaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalTortaLabel">Torta de Morango</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Ingredientes - Massa:</h2>
+        <ul>
+          <li>2 xícaras de farinha de trigo</li>
+          <li>1/2 xícara de açúcar</li>
+          <li>1 gema</li>
+          <li>100g de manteiga gelada</li>
+          <li>1 pitada de sal</li>
+        </ul>
+        
+        <h2>Ingredientes - Recheio:</h2>
+        <ul>
+          <li>500g de morangos DiMorangos</li>
+          <li>1 lata de leite condensado</li>
+          <li>1 caixa de creme de leite</li>
+          <li>1 colher de sopa de amido de milho</li>
+          <li>1 colher de chá de essência de baunilha</li>
+        </ul>
+        
+        <h2>Modo de Preparo - Massa:</h2>
+        <ol>
+          <li>Misture a farinha, o açúcar e o sal em uma tigela</li>
+          <li>Adicione a manteiga e misture com as pontas dos dedos até obter uma farofa</li>
+          <li>Acrescente a gema e amasse até formar uma bola</li>
+          <li>Forre uma forma de torta e leve ao forno a 180°C por 20 minutos</li>
+        </ol>
+        
+        <h2>Modo de Preparo - Recheio:</h2>
+        <ol>
+          <li>Em uma panela, misture o leite condensado, o creme de leite e o amido de milho</li>
+          <li>Leve ao fogo baixo, mexendo até engrossar</li>
+          <li>Retire do fogo, acrescente a baunilha e deixe esfriar</li>
+          <li>Espalhe o creme sobre a massa já assada</li>
+          <li>Decore com os morangos lavados e cortados</li>
+          <li>Leve à geladeira por 2 horas antes de servir</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Maçã do Amor -->
+<div class="modal fade" id="modalMacaAmor" tabindex="-1" aria-labelledby="modalMacaAmorLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalMacaAmorLabel">Maçã do Amor</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Ingredientes:</h2>
+        <ul>
+          <li>6 maçãs DiMorangos</li>
+          <li>3 xícaras de açúcar</li>
+          <li>1 xícara de água</li>
+          <li>1 colher de sopa de vinagre branco</li>
+          <li>Corante alimentício vermelho (opcional)</li>
+          <li>Palitos de churrasco</li>
+        </ul>
+        
+        <h2>Modo de Preparo:</h2>
+        <ol>
+          <li>Lave e seque bem as maçãs</li>
+          <li>Insira um palito de churrasco no centro de cada maçã</li>
+          <li>Em uma panela, misture o açúcar, a água e o vinagre</li>
+          <li>Leve ao fogo médio sem mexer até ferver</li>
+          <li>Quando começar a borbulhar, abaixe o fogo e cozinhe até atingir o ponto de fio (cerca de 150°C)</li>
+          <li>Adicione o corante se desejar</li>
+          <li>Com cuidado, mergulhe cada maçã no caramelo, girando para cobrir uniformemente</li>
+          <li>Deixe esfriar em um prato untado ou em papel manteiga</li>
+          <li>Espere endurecer completamente antes de servir</li>
+        </ol>
+        
+        <h3>Dica:</h3>
+        <p>Para um toque especial, você pode mergulhar a maçã caramelizada em granulado colorido antes que o caramelo endureça.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Morango com Chocolate -->
+<div class="modal fade" id="modalMorangochoco" tabindex="-1" aria-labelledby="modalMorangochocoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalMorangochocoLabel">Morango com Chocolate</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Ingredientes:</h2>
+        <ul>
+          <li>20 morangos DiMorangos grandes</li>
+          <li>200g de chocolate meio amargo</li>
+          <li>100g de chocolate branco</li>
+          <li>1 colher de sopa de óleo vegetal</li>
+          <li>Granulado ou confeitos para decorar (opcional)</li>
+        </ul>
+        
+        <h2>Modo de Preparo:</h2>
+        <ol>
+          <li>Lave e seque muito bem os morangos, mantendo o cabinho</li>
+          <li>Pique os chocolates separadamente e derreta em banho-maria ou no micro-ondas em intervalos de 30 segundos</li>
+          <li>Adicione metade do óleo vegetal a cada tipo de chocolate derretido e misture bem</li>
+          <li>Segurando pelo cabinho, mergulhe cada morango no chocolate meio amargo até 3/4 de sua altura</li>
+          <li>Coloque em um prato com papel manteiga e deixe descansar por 5 minutos</li>
+          <li>Com uma colher, faça listras com o chocolate branco sobre o chocolate meio amargo</li>
+          <li>Se desejar, polvilhe granulado antes que o chocolate endureça</li>
+          <li>Leve à geladeira por 15 minutos para firmar</li>
+          <li>Sirva em temperatura ambiente</li>
+        </ol>
+        
+        <h3>Variações:</h3>
+        <p>Você pode usar apenas um tipo de chocolate ou adicionar castanhas picadas no lugar do granulado.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Suco de Laranja com Morango -->
+<div class="modal fade" id="modalSuco" tabindex="-1" aria-labelledby="modalSucoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalSucoLabel">Suco de Laranja com Morango</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Ingredientes:</h2>
+        <ul>
+          <li>6 laranjas DiMorangos</li>
+          <li>10 morangos DiMorangos</li>
+          <li>1 colher de sopa de mel (opcional)</li>
+          <li>Gelo a gosto</li>
+          <li>Folhas de hortelã para decorar (opcional)</li>
+        </ul>
+        
+        <h2>Modo de Preparo:</h2>
+        <ol>
+          <li>Lave bem as laranjas e os morangos</li>
+          <li>Descasque as laranjas e retire as sementes</li>
+          <li>Retire os cabinhos dos morangos e corte-os ao meio</li>
+          <li>No liquidificador, coloque as laranjas descascadas e bata por 1 minuto</li>
+          <li>Adicione os morangos e bata por mais 30 segundos</li>
+          <li>Se desejar um suco mais doce, acrescente o mel</li>
+          <li>Coe o suco se preferir sem as fibras</li>
+          <li>Sirva em copos altos com gelo e decore com folhas de hortelã</li>
+        </ol>
+        
+        <h3>Benefícios:</h3>
+        <p>Esta combinação é rica em vitamina C e antioxidantes, perfeita para começar o dia com energia ou refrescar-se no calor.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div></body>
+
+  <!-- Scripts -->
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Script personalizado -->
+  <script src="script.js"></script>
+  
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const name = document.getElementById("contact-name").value;
+      const message = document.getElementById("contact-message").value;
+      const fullMessage = `Olá! Meu nome é ${name}. Mensagem: ${message}`;
+      const encodedMessage = encodeURIComponent(fullMessage);
+      const phoneNumber = "5511983747083";
+      window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+    });
+    
+    // Inicialização do Swiper
+    document.addEventListener('DOMContentLoaded', function() {
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        }
+      });
+    });
+  </script>
+</body>
+</html>

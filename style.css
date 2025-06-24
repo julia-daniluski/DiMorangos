@@ -301,7 +301,7 @@ hr{
 .frutas-section-fresca{
   padding: 50px 0 100px;
   background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), 
-           url(imgs/fundo.png);
+           url(imgs/fundofrutas.png);
   background-position: center; 
   background-size: cover; 
 }

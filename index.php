@@ -323,7 +323,7 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <img src="./imgs/mochoco.png" alt="Morango com Chocolate" class="img-fluid mb-2">
+          <img src="./imgs/morangochocoo.png" alt="Morango com Chocolate" class="img-fluid mb-2">
           <h3><span>Ingredientes:</span></h3>
           <ul>
             <li>20 morangos grandes e frescos do hortifruti<span>DiMorangos</span></li>
@@ -428,7 +428,7 @@ $frutasCongeladas = array_filter($frutas, fn($f) => $f['categoria'] === 'congela
         </div>
         <div class="card">
           <p>Morango com chocolate</p>
-          <img src="./imgs/mochoco.png" alt="Morango com chocolate">
+          <img src="./imgs/morangochocoo.png" alt="Morango com chocolate">
           <button type="button" class="btn btn-primary botao-saiba" data-bs-toggle="modal" data-bs-target="#modalMorangochoco">
             Veja receita completa
           </button>
